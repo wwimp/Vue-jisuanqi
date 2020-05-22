@@ -1,0 +1,11 @@
+#app {
+	width: 300px;
+	height: 200px;
+	margin: 100px auto;
+	border: 1px solid #000;
+	padding-top: 30px;
+	box-sizing: border-box;
+	background-color: aqua;
+	border-radius: 50px;
+	text-align: center;
+}

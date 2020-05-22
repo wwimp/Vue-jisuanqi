@@ -3,9 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Vue计算器</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
 	</head>
 	<body>
 		<div id="app">
+			计算器<br>
 			<input type="text" v-model="n1"><br>
 			<select v-model="opt">
 				<option value="0">+</option>
@@ -17,36 +20,7 @@
 			<input type="button" value="=" v-on:click="getResult"><br>
 			<input type="text" v-model="result">
 		</div>
-		<script src="vue-2.4.0.js" type="text/javascript" charset="utf-8"></script>
-		<script type="text/javascript">
-			// 创建 Vue 实例，得到 ViewModel
-			var vm = new Vue({
-				el: '#app',
-				data: {
-					n1: 0,
-					n2: 0,
-					result: 0,
-					opt: '0'
-				},
-				methods: {
-					getResult() {
-						switch (this.opt) {
-							case '0':
-								this.result = parseInt(this.n1) + parseInt(this.n2);
-								break;
-							case '1':
-								this.result = parseInt(this.n1) - parseInt(this.n2);
-								break;
-							case '2':
-								this.result = parseInt(this.n1) * parseInt(this.n2);
-								break;
-							case '3':
-								this.result = parseInt(this.n1) / parseInt(this.n2);
-								break;
-						}
-					}
-				}
-			});
-		</script>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>
